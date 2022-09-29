@@ -64,10 +64,21 @@ developing your own process.
 
   - How I debugged:
 
+  - Started debugging by adding the validation to the toy model and then
+    added the rescue exception to allow AR to check the validations.
+    This allowed me to see the error message in the browser. Had to rename the Toys.create to
+    Toy.create. This was because the model was Toy and not Toys.
+
 - Update the number of likes for a toy
 
   - How I debugged:
 
+  - Thi step requires us to add the render json: toy to the update method in the toys controller.
+    This allows the frontend to update the number of likes.
+
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+
+  - This step requires us to add the routing source in the routes.rb file for our donate button to delete it from the database since it has been donated.
+    This allows the frontend to delete the toy from the database.
